@@ -1,0 +1,170 @@
+/* GENERIC */
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+.dikhta {
+	display: all !important;
+}
+.nahidikhta {
+	display: none !important;
+}
+
+/* HEADER */
+@media screen and (min-width: 801px){
+	.min-header {
+		display: none;
+	}
+}
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.header ul {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: rgba(0,0,0,0.9);
+	transition: background 0.3s ease;
+}
+.header ul:hover {
+	background-color: black;
+}
+.header ul li {
+	display: inline;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.header ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Segoe UI;
+	color: white;
+	font-size: 100%;
+	transition: border 0.5s ease;
+	border-bottom: 3px solid transparent;
+}
+.header ul li a:hover {
+	border-bottom: 3px solid;
+	transition: border 0.5s ease;
+}
+.dist {
+	color: #EAA221 !important;
+	font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+	.header {
+		display: none;
+	}
+	.min-header {
+		display: all;
+		position: fixed;
+		top: 0;
+		z-index: 1;
+		font-family: Segoe UI;
+	}
+	#burger:hover {
+		background-color: white;
+		transition: 0.5s ease;
+	}
+	#burglist li:hover {
+		background-color: rgba(0,0,0,1);
+	}
+}
+
+/* SPLASH */
+.splash {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh !important;
+	min-width: 100% !important;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+}
+
+/* HOME */
+#home {
+	background-color: black;
+	background-image: url("../img/marigold_back.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+#home h1 {
+	font-size: 100px;
+}
+#home p {
+	font-size: 20px;
+}
+#home i {
+	position: absolute;
+	bottom: 10px;
+	font-size: 30px;
+	align-self: center;
+	background-color: #2E151B;
+	border-radius: 5px;
+	transition: 0.5s ease;
+}
+#home i a {
+	/* color: black; */
+	color: rgb(235, 182, 83);
+	text-decoration: none;
+}
+#home i:hover {
+	opacity: 0.7;
+	transition: 0.5s ease;
+}
+@media screen and (max-width: 801px){
+	#home h1 {
+		font-size: 50px;
+	}
+}
+
+/* ABOUT */
+#about {
+	background-color: rgb(235, 182, 83);
+	color: rgb(37, 11, 11);
+}
+#about h1 {
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+#about p {
+	margin: 0 auto;
+	max-width: 50vw;
+	font-size: 20px;
+	text-align: justify;
+}
+#about a {
+	width: 75px !important;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 10px;
+	border: 5px solid #2E151B;
+	border-radius: 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(235, 182, 83);
+	background-color: #2E151B;
+}
+#about a:hover {
+	background-color: transparent;
+	color: #2E151B;
+	transition: 0.5s ease;
+}
+@media screen and (max-width: 801px){
+	#about h1 {
+		margin-bottom: 30px;
+	}
+	#about p {
+		max-width: 80vw;
+		font-size: 15px;
+		text-align: center;
+	}
+}

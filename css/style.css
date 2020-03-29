@@ -50,7 +50,7 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color: rgba(0,0,0,0.9);
-	transition: background 0.3s ease;
+	transition: background 0.5s ease;
 }
 .header ul:hover {
 	background-color: black;
@@ -176,6 +176,9 @@
 	font-size: 50px;
 	margin-bottom: 40px;
 }
+#projects img {
+	max-width: 100vw !important;
+}
 .slideshow-container {
 	position: relative;
 }
@@ -207,13 +210,6 @@
 }
 .prev:hover, .next:hover {
 	background-color: rgba(0,0,0,0.8);
-}
-.text {
-	color: #f2f2f2;
-	font-size: 15px;
-	padding-top: 5px;
-	width: auto;
-	text-align: center;
 }
 .numbertext {
 	color: #f2f2f2;
@@ -261,4 +257,10 @@
 @keyframes fade {
 	from {opacity: 0.4}
 	to {opacity: 1}
+}
+
+/* MARIGOLD */
+#marigold {
+	background: url("../img/marigold_back1.png");
+	background-attachment: fixed;
 }
